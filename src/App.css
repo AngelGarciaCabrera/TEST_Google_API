@@ -1,0 +1,30 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el contenedor principal */
+#root {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Fondo opcional */
+}
+
+/* Estilos para el contenedor del mapa */
+.MapContainer {
+  width: 80vmin; /* Tamaño cuadrado basado en el menor lado de la pantalla */
+  height: 80vmin;
+  max-width: 600px; /* Tamaño máximo para pantallas grandes */
+  max-height: 600px;
+  background-color: white; /* Fondo del contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto elevado */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Para que el mapa no se salga del contenedor */
+}
