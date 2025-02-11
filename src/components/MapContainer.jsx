@@ -12,8 +12,6 @@ const MapComponent = () => {
     };
     
     const center = userLocation || { lat: 0, lng: 0 }; // Centrar el mapa en la ubicación del usuario
-    console.log('Ubicacion del usuario',userLocation)
-    
     const { isLoaded, loadError } = useLoadScript({
         googleMapsApiKey: import.meta.env.VITE_CLAVE_API, //ASI REACT OPTIENE LOS ENV,
     });
